@@ -22,7 +22,7 @@ const AboutHero = () => {
         <div className="col-span-5 col-start-1 row-span-1 row-start-7">
           Use Generix Insurance to collate all of your lifetime assets. Generate
           a Will template, fast.
-          test
+          abc
         </div>
         <Button className="col-span-3 col-start-1 row-span-2 bg-blue-800 row-start-8">
           Get the best quotes
