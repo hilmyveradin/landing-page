@@ -4,14 +4,26 @@ import { Button } from '../ui/button';
 
 const AboutHero = () => {
   return (
-    // question: gimana caranya biar kita gaperlu pake div <a> ini ?
-    <div className="max-w-5xl">
-      <div className="grid grid-cols-12 space-x-4 space-y-4 grid-rows-10">
-        <div className="col-span-12 row-span-1 bg-red-500"> a </div>
-        <div className="col-span-6 col-start-1 row-span-5 row-start-2 text-7xl">
-          Map and protect your lifetime wealth on a single online platform.
+    <div className="mx-auto max-w-7xl">
+      <div className="grid grid-cols-12 space-x-4 space-y-4 pt-[90px] pb-[100px]">
+        <div className="flex flex-col col-span-6 col-start-1">
+          <div className="flex-1">
+            <p className="text-6xl text-[#2E3E97] font-bold">
+              Map and protect your lifetime wealth on a single online platform.
+            </p>
+          </div>
+          <div className="flex mt-6">
+            <p>
+              Use Generix Insurance to collate all of your lifetime assets.
+              Generate a Will template, fast.
+            </p>
+          </div>
+
+          <div className="flex-1 mt-12">
+            <Button className="bg-blue-800">Get the best quotes</Button>
+          </div>
         </div>
-        <div className="col-span-6 col-start-7 row-start-2 row-span-9">
+        <div className="col-span-6 col-start-7">
           <Image
             src="/assets/about-hero.svg"
             width={662.851}
@@ -19,16 +31,7 @@ const AboutHero = () => {
             alt=""
           />
         </div>
-        <div className="col-span-5 col-start-1 row-span-1 row-start-7">
-          Use Generix Insurance to collate all of your lifetime assets. Generate
-          a Will template, fast.
-          abc
-        </div>
-        <Button className="col-span-3 col-start-1 row-span-2 bg-blue-800 row-start-8">
-          Get the best quotes
-        </Button>
       </div>
-      <div className="col-span-12 row-span-1 bg-red-500 row-start-10"> a </div>
     </div>
   );
 };
