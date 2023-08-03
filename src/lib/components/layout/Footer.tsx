@@ -14,14 +14,6 @@ const Footer = () => {
 
   return (
     <footer className="max-w-5xl h-[337px]">
-      {/* <div className="flex">
-        <p className="text-xs">
-          {new Date().getFullYear()} -{' '}
-          <a href="https://sznm.dev" target="_blank" rel="noopener noreferrer">
-            sznm.dev
-          </a>
-        </p>
-      </div> */}
       <div className="grid grid-cols-12 gap-x-10 gap-y-8">
         <div className="col-span-2">
           <Image src="/assets/logo.svg" width={100} height={20} alt="" />
