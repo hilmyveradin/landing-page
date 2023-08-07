@@ -78,8 +78,8 @@ const DashboardPage = () => {
       <TableHeader>
         <TableRow>
           <TableHead> ID </TableHead>
-          <TableHead> Nama Paket </TableHead>
-          <TableHead> Harga </TableHead>
+          <TableHead> Package Name </TableHead>
+          <TableHead> Price </TableHead>
           <TableHead> Date </TableHead>
           <TableHead> Action </TableHead>
         </TableRow>
@@ -134,7 +134,7 @@ const DashboardPage = () => {
                         </div>
                         <div className="grid items-center grid-cols-4 gap-4">
                           <Label htmlFor="packageName" className="text-right">
-                            Nama Paket
+                            Package Name
                           </Label>
                           <Input
                             id="packageName"
@@ -144,7 +144,7 @@ const DashboardPage = () => {
                         </div>
                         <div className="grid items-center grid-cols-4 gap-4">
                           <Label htmlFor="packagePrice" className="text-right">
-                            Harga
+                            Price
                           </Label>
                           <Input
                             id="packagePrice"
