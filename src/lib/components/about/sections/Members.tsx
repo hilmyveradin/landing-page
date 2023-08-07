@@ -1,8 +1,8 @@
-const AboutMembers = () => {
+const Members = () => {
   return (
-    <div className="mt-[90px] max-w-7xl mx-auto">
-      <div className="flex flex-col items-center">
-        <p className="text-5xl font-semibold">
+    <div className="px-10 mt-[90px] max-w-7xl mx-auto">
+      <div className="flex flex-col items-center text-center">
+        <p className="text-2xl font-semibold lg:text-5xl">
           Get the right protection to keep moving forward
         </p>
 
@@ -17,7 +17,24 @@ const AboutMembers = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-12 space-x-4 text-center mt-[65px]">
+        <div className="flex flex-col mt-16 lg:hidden space-y-11">
+          <div className="">
+            <p className="text-[#65CED6] font-bold">SAVINGS</p>
+            <p className="text-5xl font-bold text-[#2E3E97] mt-6">$750+</p>
+          </div>
+
+          <div className="">
+            <p className="text-[#65CED6] font-bold">MEMBERS</p>
+            <p className="text-5xl font-bold text-[#2E3E97] mt-6">18 M+</p>
+          </div>
+
+          <div className="">
+            <p className="text-[#65CED6] font-bold"> SUPPORT</p>
+            <p className="text-5xl font-bold text-[#2E3E97] mt-6">24 hr</p>
+          </div>
+        </div>
+
+        <div className="grid-cols-12 space-x-4 text-center mt-[65px] hidden lg:grid">
           <div className="col-span-2 col-start-2">
             <p className="text-[#65CED6] font-bold">SAVINGS</p>
           </div>
@@ -47,4 +64,4 @@ const AboutMembers = () => {
   );
 };
 
-export default AboutMembers;
+export default Members;

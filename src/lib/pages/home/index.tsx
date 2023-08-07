@@ -1,26 +1,20 @@
 import type { NextPage } from 'next';
 
-import AboutFeatures2 from '@/lib/components/about/AboutFeatures2';
-import AboutStepsFeature from '@/lib/components/about/AboutSteps';
-import AboutFeatures from '@/lib/components/about/Features';
-import AboutHero from '@/lib/components/about/Hero';
-import AboutMembers from '@/lib/components/about/Members';
+import Features from '@/lib/components/about/sections/Features';
+import Hero from '@/lib/components/about/sections/Hero';
+import Members from '@/lib/components/about/sections/Members';
+import StepsFeature from '@/lib/components/about/sections/Steps';
 import { Separator } from '@/lib/components/ui/separator';
 
 const Home: NextPage = () => {
   return (
-    <>
-      <div className="bg-[#D5E4F6] min-w-full">
-        <AboutHero />
-      </div>
-      <AboutMembers />
-      <Separator className="mt-[120px] max-w-7xl mx-auto" />
-      <AboutFeatures />
-      <AboutFeatures2 />
-      <div className="bg-[#FAFAFA]">
-        <AboutStepsFeature />
-      </div>
-    </>
+    <div className="flex flex-col items-center">
+      <Hero />
+      <Members />
+      <Separator className="mt-[100px] max-w-[90%] mx-[20px] lg:mt-[120px] lg:mx-auto" />
+      <Features />
+      <StepsFeature />
+    </div>
   );
 };
 
