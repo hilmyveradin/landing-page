@@ -15,9 +15,9 @@ const navBarLists = [
 
 const Header = () => {
   return (
-    <header className="z-10 w-full px-10 bg-base-100/80 backdrop-blur-md lg:max-w-7xl lg:px-4  bg-[#D5E4F6]">
+    <header className="z-10 w-full bg-base-100/80 backdrop-blur-md lg:max-w-7xl lg:px-4  bg-[#D5E4F6]">
       <div className="flex-col hidden w-full lg:flex ">
-        <div className="flex items-center justify-between py-2 mx-auto">
+        <div className="flex items-center justify-between py-2">
           <Image src="/assets/logo.svg" width={100} height={20} alt="" />
           <ul className="flex flex-row space-x-4 mr-[100px]">
             {navBarLists.map((items) => (
