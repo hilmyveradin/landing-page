@@ -24,7 +24,7 @@ const Footer = () => {
             This is the usefull template from Sebo. You can buy this on our
             website, UI8 and also our Creativemarket.
           </div>
-          <div className="col-span-3 col-start-9 bg-slate-400">foobar</div>
+          {/* <div className="col-span-3 col-start-9 bg-slate-400">foobar</div> */}
           <Separator className="col-span-12" />
 
           <div className="col-span-6 col-start-1">
@@ -58,7 +58,7 @@ const Footer = () => {
           This is the usefull template from Sebo. You can buy this on our
           website, UI8 and also our Creativemarket.
         </p>
-        <div className="mt-6 bg-slate-400">foobar</div>
+        {/* <div className="mt-6 bg-slate-400">foobar</div> */}
         <div className="grid grid-cols-6 mt-[64px]">
           {navBarLists.map((items, index) => {
             if (index === 3) {

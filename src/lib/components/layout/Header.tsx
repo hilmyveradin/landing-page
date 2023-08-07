@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 import { Button } from '../ui/button';
 import { Separator } from '../ui/separator';
@@ -14,6 +17,12 @@ const navBarLists = [
 ];
 
 const Header = () => {
+  const router = useRouter();
+
+  const goToDashboard = () => {
+    router.push('/dashboard');
+  };
+
   return (
     <header className="z-10 w-full bg-base-100/80 backdrop-blur-md lg:max-w-7xl lg:px-4  bg-[#D5E4F6]">
       <div className="flex-col hidden w-full lg:flex ">
@@ -34,7 +43,10 @@ const Header = () => {
               {' '}
               Log in{' '}
             </Button>
-            <Button className="bg-[#2E3E97] font-semibold hover:bg-[#2E3E97]/50">
+            <Button
+              className="bg-[#2E3E97] font-semibold hover:bg-[#2E3E97]/50"
+              onClick={goToDashboard}
+            >
               {' '}
               Get a quotes{' '}
             </Button>
@@ -67,7 +79,10 @@ const Header = () => {
                 {' '}
                 Log in{' '}
               </Button>
-              <Button className="bg-[#2E3E97] font-semibold hover:bg-[#2E3E97]/50">
+              <Button
+                className="bg-[#2E3E97] font-semibold hover:bg-[#2E3E97]/50"
+                onClick={goToDashboard}
+              >
                 {' '}
                 Get a quotes{' '}
               </Button>
