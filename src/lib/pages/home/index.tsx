@@ -1,9 +1,9 @@
 import type { NextPage } from 'next';
 
-import Features from '@/lib/components/about/sections/Features';
-import Hero from '@/lib/components/about/sections/Hero';
-import Members from '@/lib/components/about/sections/Members';
-import StepsFeature from '@/lib/components/about/sections/Steps';
+import Features from '@/lib/components/about/sections/features';
+import Hero from '@/lib/components/about/sections/hero';
+import Members from '@/lib/components/about/sections/members';
+import StepsFeature from '@/lib/components/about/sections/steps';
 import { Separator } from '@/lib/components/ui/separator';
 
 const Home: NextPage = () => {

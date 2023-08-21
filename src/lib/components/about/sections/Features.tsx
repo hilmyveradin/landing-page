@@ -1,7 +1,7 @@
 /* eslint-disable sonarjs/no-duplicate-string */
 import Image from 'next/image';
 
-import DescriptionComponent from '../DescriptionComponent';
+import DescriptionComponent from '../description-component';
 
 const dataArray = [
   {
