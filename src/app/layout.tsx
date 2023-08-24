@@ -6,11 +6,11 @@ import { cn } from '@/lib/utils';
 
 import '@/lib/styles/globals.css';
 
-const APP_NAME = 'nextarter-tailwind';
+const APP_NAME = 'Generix';
 
 export const metadata: Metadata = {
   title: APP_NAME,
-  description: 'Next.js + TailwindCSS v3 + TypeScript template',
+  description: 'Your insurance partner',
   viewport: {
     width: 'device-width',
     initialScale: 1,
@@ -26,17 +26,13 @@ export const metadata: Metadata = {
   },
   themeColor: '#FFFFFF',
   openGraph: {
-    url: 'https://nextarter-tailwind.sznm.dev',
-    title: 'nextarter-tailwind',
-    description: 'Next.js + TailwindCSS v3 + TypeScript template',
+    url: 'https://landing-page-gamma-lyart.vercel.app/',
+    title: 'Generix',
+    description: 'Your insurance partner',
     images: {
-      url: 'https://og-image.sznm.dev/**nextarter-tailwind**.sznm.dev.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fsznm.dev%2Favataaars.svg&widths=250',
-      alt: 'nextarter-tailwind.sznm.dev og-image',
+      url: 'https://lh3.googleusercontent.com/drive-viewer/AITFw-w7oxusPQFZedmWyTkYJFrdDmWYS-ZH1-f2OyZlpv1Vn3kA5D_eJpIjbjfIspIXLQDnMM0-DnrPh5jocCGZcnUykmo93w=s2560',
+      alt: 'generix image',
     },
-  },
-  twitter: {
-    creator: '@sozonome',
-    card: 'summary_large_image',
   },
 };
 
