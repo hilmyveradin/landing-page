@@ -43,13 +43,7 @@ const ActionCell: React.FC<ActionCellProps> = ({ data }: ActionCellProps) => {
   // const [editedData, setEditedData] = useState<UserTable>();
   const changeState = useTableStore((state) => state.setTableState);
   const userID = useUserStore((state) => state.userID);
-  const {
-    handleSubmit,
-    control,
-    setValue,
-    formState: { errors },
-    watch,
-  } = useForm<UserTable>();
+  const { handleSubmit, control, setValue, watch } = useForm<UserTable>();
   // eslint-disable-next-line @typescript-eslint/naming-convention
   const { product_id } = watch();
 
@@ -196,14 +190,24 @@ const ActionCell: React.FC<ActionCellProps> = ({ data }: ActionCellProps) => {
                         name={field as keyof UserTable}
                         control={control}
                         defaultValue={String(data[field as keyof ShownTable])}
+                        rules={{ required: 'This field is required' }}
                         // eslint-disable-next-line @typescript-eslint/no-shadow
-                        render={({ field }) => (
-                          <Input
-                            id={field.name}
-                            value={field.value as string | number}
-                            onChange={(e) => field.onChange(e.target.value)}
-                            className="col-span-3"
-                          />
+                        render={({ field, fieldState }) => (
+                          <>
+                            <Input
+                              id={field.name}
+                              value={field.value as string | number}
+                              onChange={(e) => field.onChange(e.target.value)}
+                              className={`col-span-3 ${
+                                fieldState.invalid ? 'border-red-500' : ''
+                              }`}
+                            />
+                            {fieldState.error && (
+                              <span className="text-xs text-red-500">
+                                {fieldState.error.message}
+                              </span>
+                            )}
+                          </>
                         )}
                       />
                     </div>
