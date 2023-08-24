@@ -24,7 +24,7 @@
   }
 
   .wrapper {
-    @apply mx-auto p-6 sm:p-8;
+    @apply p-6 mx-auto sm:p-8;
     max-width: 48rem;
   }
 }
@@ -63,7 +63,7 @@
     --radius: 0.5rem;
   }
 
-  .dark {
+  /* .dark {
     --background: 224 71.4% 4.1%;
     --foreground: 210 20% 98%;
 
@@ -92,7 +92,7 @@
     --destructive-foreground: 0 85.7% 97.3%;
 
     --ring: 215 27.9% 16.9%;
-  }
+  } */
 }
 
 @layer base {
